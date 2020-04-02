@@ -8,7 +8,7 @@ namespace UserRegistration
         static string VALIDNAMEPATTERN = "^[A-Z][a-z]{2,}$";
         static string EMAILPATTERN="^([a-z0-9.-]+)@([a-z0-9-]+).([a-z]{2,8})(.[a-z]{2,8})?$";
         static string MOBILEPATTERN="^[0-9]{2} [6-9]{1}[0-9]{9}$";
-        static string PASSWORD = "^.*(?=.*[a-z0-9])*(?=.*[A-Z])(.{8,})$";
+        static string PASSWORD = "^.*(?=.*[a-z0-9])*(?=.*[A-Z])*(?=.*[!@#$%^&*])(.{8,})$";
 
         Regex regName = new Regex(VALIDNAMEPATTERN);
         Regex regEmail = new Regex(EMAILPATTERN);
